@@ -25,7 +25,7 @@ SECRET_KEY = 'vu7&smw1z$n7hzcq5ecrdk%1@d)458jqxt*c(!%-q0c8(k1@d='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['moskalentarium.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'moskalentarium.pythonanywhere.com']
 
 
 # Application definition
