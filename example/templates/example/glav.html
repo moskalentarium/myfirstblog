@@ -1,0 +1,8 @@
+{% extends "example/wrapper.html" %}
+
+{% block content %}
+  <h1>{% include "example/includes/some_html.html" %}</h1>
+  {% for val in values %}
+    <p>{{val}}</p>
+  {% endfor %}
+{% endblock%}

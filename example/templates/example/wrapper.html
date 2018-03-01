@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Заголовок страницы</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+
+      <p>
+        <a href="/" class="btn btn-success btn-lg">Main Page</a>
+        <a href="/aboutme" class="btn btn-primary btn-lg">My Life Story</a>
+        <a href="/blog" class="btn btn-info btn-lg">Blog</a>
+        <!--<a href="/gallery" class="btn btn-contact btn-lg">Gallery</a>-->
+      </p>
+      <!--<h1>{% include "example/includes/some_html.html" %}</h1>-->
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+  <p>
+  <div class="container">
+
+    <hr>
+    &copy; Все права защищены злой собакой
+    <p>Гав</p>
+    <p>
+    <img src="https://pp.userapi.com/c830308/v830308654/6ae49/mg3Xbsr7kEo.jpg" alt="My face" height="142" width="130">
+  </p>
+  </div>
+</p>
+</body>
+</html>

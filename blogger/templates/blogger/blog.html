@@ -1,0 +1,7 @@
+{% extends "example/wrapper.html" %}
+
+{% block content %}
+  <h2 class="text-info">{{articles.title}}</h2>
+  <h6 class="text-info">Publicated: {{articles.date| date:"D d M Y"}}</h6>
+  <p>{{articles.post|safe|linebreaks}}</p>
+{% endblock%}
